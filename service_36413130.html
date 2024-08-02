@@ -1,1 +1,242 @@
+<!doctype html>
+<html lang="ja">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>サービス工学　最終課題</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://kinggnu.jp/live/">Official Web Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://dome-tour.kinggnu.jp/">ライブ特設サイト</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <br></br>
+          <a>
+            <img src="img/OIP3.jpg" class="d-block img-fluid" width="10000">
+          </a>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            KING GNU
+          </h2>
+          <p class="lead">
+            member<br>
+            ボーカル:井口　理<br>
+            ギター：常田　大希<br>
+            ベース：新井　和輝<br>
+            ドラム：勢喜　遊<br><br>
+
+            代表曲<br>
+			白日<br>
+			一途<br>
+            逆夢<br>
+            硝子窓　new!
+            映画「ミステリと言う勿れ」主題歌
+          </p>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+            role="img" aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg> -->
+          <img src="img/OIP2.jpg" width="100%">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            ライブツアー開催決定
+          </h2>
+          <p class="lead">
+            THE GREATEST UNKNOWNが開催されます．
+          </p>
+          <p class="lead">
+            01/13から03/23の間で5つの場所で開催されます．
+          </p>
+          <a href="https://dome-tour.kinggnu.jp/">ライブ詳細はこちらから</a>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+            role="img" aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg> -->
+          <img src="img/OIP.jpg" width="100%">
+        </div>
+      </div>
+      <br>
+
+      <!-- /END THE FEATURETTES -->
+
+      <h2>ライブ開催日程</h2>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">日程</th>
+            <th scope="col">都市</th>
+            <th scope="col">会場</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>01/13-14</td>
+            <td>大阪</td>
+            <td>
+              京セラドーム　大阪
+            </td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">2</th> -->
+            <td>01/20-21</td>
+            <td>愛知</td>
+            <td>バンテリンドーム　名古屋</td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">2</th> -->
+            <td>01/27-28</td>
+            <td>東京</td>
+            <td>東京ドーム</td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">2</th> -->
+            <td>02/03-04</td>
+            <td>福岡</td>
+            <td>福岡ペイペイドーム</td>
+          </tr>
+          <tr>
+            <!-- <th scope="row">2</th> -->
+            <td>03/23</td>
+            <td>札幌</td>
+            <td>札幌ドーム</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="mapid" style="width:100%;height:500px"></div>
+
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var mymap = L.map('mapid').setView([35.18, 136.924], 6);
+    L.tileLayer(
+      'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+    ).addTo(mymap);
+
+
+    const osaka = [34.6689, 135.4768];
+    const nagoya = [35.1860, 136.9475];
+    const tokyo = [35.7055, 139.7517];
+    const fukuoka = [33.5955, 130.3626];
+    const sapporo = [43.0144, 141.4090];
+
+    var markerOsaka = L.marker(osaka).addTo(mymap);
+    var markerNagoya = L.marker(nagoya).addTo(mymap);
+    var markerFukuoka = L.marker(tokyo).addTo(mymap);
+    var markerSendai = L.marker(fukuoka).addTo(mymap);
+    var markerYokohama = L.marker(sapporo).addTo(mymap);
+
+    markerOsaka.bindPopup(
+      "<b>京セラドーム</b>"
+    );
+    markerNagoya.bindPopup(
+      "<b>バンテリンドーム</b>"
+    ).openPopup();
+    markerTokyo.bindPopup(
+      "<b>東京ドーム</b>"
+    );
+    markerFukuoka.bindPopup(
+      "<b>福岡ペイペイドーム</b>"
+    );
+    markerSapporo.bindPopup(
+      "<b>札幌ドーム</b>"
+    );
+
+
+  </script>
+</html>
